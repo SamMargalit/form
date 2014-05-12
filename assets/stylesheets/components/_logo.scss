@@ -1,0 +1,33 @@
+.logo-container {
+  display: block;
+  margin: -20px auto 0;
+  opacity: 0;
+}
+
+.logo {
+  stroke-dasharray: 1000;
+  fill: #fafafa;
+  -webkit-transition: all 5s ease-in-out;
+}
+
+.logo--inner {
+  -webkit-animation: dash 6s ease-in-out forwards 1s;
+}
+
+.logo--outer {
+  -webkit-animation: dash 5s ease-in-out forwards 1s;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+    fill: #fafafa;
+  }
+  50% {
+    fill: #fafafa;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #666666;
+  }
+}

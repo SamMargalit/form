@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  background-color: #fafafa;
 }
 
 p {
@@ -17,6 +18,44 @@ img {
 }
 
 // Structure  --------------------------
+
+.hexagons {
+  background-image: url(/assets/images/hex-bg.png);
+  background-size: 196px 200px;
+  background-repeat: repeat-x;
+  background-position: top center;
+  content: "";
+  height: 200px;
+  margin-top: -10px;
+  opacity: 0;
+  width: 100%;
+}
+
+.name-container {
+  display: block;
+  margin: 80px auto;
+  opacity: 0;
+  text-align: center;
+  font-family: "halogen",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8em;
+  color: #666;
+  letter-spacing: 1em;
+  padding-left: 1.1em;
+  -webkit-perspective: 1000px;
+}
+
+.letter {
+  display: inline-block;
+  margin: 0;
+  font-style: normal;
+  -webkit-transform: rotateY(90deg);
+}
+
+.letter--1 {
+
+}
 
 .container {
   width: mobile_flexgrid(23);
